@@ -45,8 +45,8 @@ export const AddLog = () => {
 
             <div className="mb-5 relative">
               <input
-                type="password"
-                id="password"
+                type="date"
+                id="date"
                 className="peer pt-8 border border-gray-200 focus:outline-none rounded-md focus:border-gray-500 focus:shadow-sm w-full p-3 h-16 placeholder-transparent"
                 placeholder="password"
                 autocomplete="off"
