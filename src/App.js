@@ -2,11 +2,14 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
-import Home from "./pages";
+import Home from "./pages/home";
 import { Switch, Route } from "react-router-dom";
 import About from "./pages/about";
-import Menu from "./pages/menu";
+import Logs from "./pages/logs";
 import DropDown from "./components/DropDown";
+import { Login } from "./pages/login";
+import { AddLog } from "./pages/addlog";
+import { Contact } from "./pages/contact";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +40,10 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
-        <Route path="/menu" component={Menu} />
+        <Route path="/logs" component={Logs} />
+        <Route path="/login" component={Login} />
+        <Route path="/addlog" component={AddLog} />
+        <Route path="/contact" component={Contact} />
       </Switch>
       <Footer />
     </>
