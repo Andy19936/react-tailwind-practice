@@ -7,7 +7,7 @@ export const AddLog = () => {
     history.push("/logs");
   };
   return (
-    <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+    <div className="min-h-screen bg-red-500 py-6 flex flex-col justify-center sm:py-12">
       <div className="relative py-3 w-11/12 max-w-xl sm:mx-auto">
         <div className="relative p-8 bg-white shadow-sm sm:rounded-xl">
           <form className="w-full">
