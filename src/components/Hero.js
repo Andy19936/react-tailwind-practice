@@ -27,6 +27,27 @@ const Hero = () => {
           />
         </svg>
       </Link>
+      <br />
+      <Link
+        className="py-6 px-10  bg-white rounded-full text-3xl hover:bg-blue-300 transition duration-300 ease-in-out flex items-center animate-bounce text-black font-extralight "
+        to="/workout"
+      >
+        Get A Workout
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6 ml-3"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M13 10V3L4 14h7v7l9-11h-7z"
+          />
+        </svg>
+      </Link>
     </div>
   );
 };

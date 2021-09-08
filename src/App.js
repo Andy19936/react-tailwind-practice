@@ -10,6 +10,8 @@ import DropDown from "./components/DropDown";
 import { Login } from "./pages/login";
 import { AddLog } from "./pages/addlog";
 import { Contact } from "./pages/contact";
+import WorkOut from "./pages/workout";
+import NotLoggedIn from "./components/NotLoggedIn";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,11 +41,13 @@ function App() {
       <DropDown isOpen={isOpen} toggle={toggle} />
       <Switch>
         <Route path="/" exact component={Home} />
+        <Route path="/notloggedin" component={NotLoggedIn} />
         <Route path="/about" component={About} />
         <Route path="/logs" component={Logs} />
         <Route path="/login" component={Login} />
         <Route path="/addlog" component={AddLog} />
         <Route path="/contact" component={Contact} />
+        <Route path="/workout" component={WorkOut} />
       </Switch>
       <Footer />
     </>
