@@ -7,6 +7,7 @@ const Hero = () => {
       <h1 className="lg:text-9xl md:text-7xl sm:text-5xl text-3xl text-white font-black mb-14">
         PepWalk
       </h1>
+
       <Link
         className="py-6 px-10  bg-white rounded-full text-3xl hover:bg-blue-300 transition duration-300 ease-in-out flex items-center animate-bounce text-black font-extralight "
         to="/addlog"
